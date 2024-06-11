@@ -16,3 +16,7 @@ Event Management System
 
 Database : MySql
 Laravel : 8
+
+
+admin username : zawzaw
+admin password : asdfsdfa
