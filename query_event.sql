@@ -1,0 +1,18 @@
+INSERT INTO events (EventName, Description, Date, Time, Location, created_at, updated_at) VALUES
+('Ameliorated stable Graphical User Interface', 'Room floor production article dark. Response clear build. Statement read also glass call.', '2024-02-05', '21:28:35', '220 Stacey Meadow Suite 137, Port Lisachester, CA 41632', NOW(), NOW()),
+('Public-key zero tolerance monitoring', 'Front election always hospital article new. Speech leg other authority half.', '2024-03-30', '17:56:15', '308 Anthony Shoals Suite 154, Julianport, CO 15015', NOW(), NOW()),
+('Face-to-face 24hour workforce', 'Study certain be remain state friend him. Scene beyond others marriage.', '2024-05-29', '13:58:46', '9981 White Overpass Apt. 397, Butlerhaven, ME 25132', NOW(), NOW()),
+('Profound homogeneous implementation', 'Month officer moment you. Lead speech someone political beautiful girl production.', '2024-04-11', '18:28:51', '558 Andrews Courts, Sandersfort, RI 35715', NOW(), NOW()),
+('Team-oriented directional system engine', 'Institution key special street argue science. Attorney policy protect toward pull.', '2024-03-10', '17:36:50', '56785 Smith Fort, North Nancyview, OR 41768', NOW(), NOW()),
+('Total intermediate focus group', 'Boy state democratic. Perform fight week social.', '2024-06-08', '12:16:20', '2343 Hall Bridge, Lake Tracyfort, NY 19474', NOW(), NOW()),
+('Progressive user-facing open system', 'Officer figure in. Two body reduce after leave. Role girl test trade significant.', '2024-05-02', '09:40:32', '3742 Stevens Village, West Lauren, DE 96150', NOW(), NOW()),
+('Object-based static strategy', 'Whom land lot hear visit since. Next tax operation blue increase.', '2024-01-22', '10:22:15', '59493 Miller Route Apt. 591, North Kellyfort, NV 43242', NOW(), NOW()),
+('Organic executive software', 'Along movie. Similar our left tell matter. Life window child so the agreement.', '2024-03-19', '16:12:09', '9407 Amber Divide, Ryanland, MS 52797', NOW(), NOW()),
+('Re-engineered impactful local area network', 'The meeting sign type black into. Time edge series approach bed organization.', '2024-01-29', '14:50:18', '6777 Stuart Lights, Jasonside, GA 82143', NOW(), NOW()),
+('Advanced 24/7 matrix', 'Land after so strong they opportunity radio.', '2024-02-19', '15:08:41', '127 Lee Gardens Apt. 970, Mcgrathside, SD 68267', NOW(), NOW()),
+('Expanded leading edge policy', 'Modern seem type challenge other. Discover cell issue deal.', '2024-03-03', '19:28:12', '162 Christopher Lodge, New Brandonstad, WV 48534', NOW(), NOW()),
+('Persistent stable portal', 'Building operation shoulder no. Available sit stage statement produce follow.', '2024-04-27', '17:21:07', '294 Stewart Island, East Sharonport, WY 52443', NOW(), NOW()),
+('Re-contextualized modular data-warehouse', 'Weight reason recent sound out. Floor political yourself child.', '2024-02-14', '11:49:19', '158 Michael Heights, North Kevinland, LA 53714', NOW(), NOW()),
+('Down-sized regional alliance', 'Economic movie fact. Adult role head year care.', '2024-05-11', '16:35:43', '89888 Amanda Lodge, South Paul, ND 56729', NOW(), NOW()),
+('Stand-alone transitional installation', 'Song garden wish think during while. Behind possible production fish serious.', '2024-06-07', '18:02:58', '973 Linda Crossroad Suite 162, North Jacquelineborough, MT 76938', NOW(), NOW()),
+('Optional impactful knowledge user', 'Sign develop rich. Rise same occur among but full. Act edge building push they away far.', '2024-03-16', '08:42:57', '877 Garcia Walks, North Kaylahaven, NH 23424', NOW(), NOW());
