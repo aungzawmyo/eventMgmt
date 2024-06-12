@@ -186,9 +186,20 @@
                 </a>
             </div> 
             <ul class="bo_menu">
-                <li class="bo_menu_item">
+                
+                
+                <!-- <li class="bo_menu_item">
                     <a href="/" class="bo_menu_lnk ">Home</a>
-                </li>  
+                </li>  -->
+                @if( Session()->has('Logion') == "loginId" && Session()->get('Role') == "Admin")
+                    <!-- <li class="bo_menu_item">
+                        <a href="/" class="bo_menu_lnk ">Home</a>
+                    </li>  -->
+                @else 
+                    <li class="bo_menu_item">
+                        <a href="/" class="bo_menu_lnk ">Home</a>
+                    </li> 
+                @endif 
                 @if(Session()->get('Role') == "Admin")
                     <li class="bo_menu_item">
                         <a href="/admin/dashboard" class="bo_menu_lnk ">Dashboard</a>
