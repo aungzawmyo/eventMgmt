@@ -205,8 +205,17 @@
                         <a href="/admin/dashboard" class="bo_menu_lnk ">Dashboard</a>
                     </li>
                 @endif 
+                
+                @if(Session()->has('loginId'))
+                    @if(Session()->get('Role') != "Admin")
+                        <li class="bo_menu_item">
+                            <a href="/upcoming-event" class="bo_menu_lnk ">Upcoming Event</a>
+                        </li>  
+                    @endif
+                @endif
+
                 <li class="bo_menu_item">
-                    <a href="#" class="bo_menu_lnk ">AboutUs</a>
+                    <a href="/about-us" class="bo_menu_lnk ">AboutUs</a>
                 </li>  
             </ul>
             <div class="clearfix"></div>

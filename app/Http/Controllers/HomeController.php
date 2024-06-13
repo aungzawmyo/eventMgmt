@@ -7,7 +7,7 @@ use Illuminate\View\View;
 use App\Models\Event;
 use Illuminate\Support\Facades\Session;
 use App\Models\Registration; 
-
+use DB;
 class HomeController extends Controller
 {
     public function home(): View
@@ -32,5 +32,17 @@ class HomeController extends Controller
             }
         }
 
+    }
+    public function upcomingEvent() {
+
+        // $userid = Session::get("loginId"); 
+        // $registration = Registration::with("event")->where("UserID", $userid)->get();
+        $events =  Event::with('users')->orderBy("created_at","desc")->get();
+        return view('upcoming-event', ['eventList'=> $events]);
+        
+    }
+    public function aboutUs()  {
+        return view('about-us');
+        
     }
 }

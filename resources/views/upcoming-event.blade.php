@@ -36,7 +36,7 @@
     
     }
     .div-popular-evnets{
-        background-color: #6018a7;
+        /* background-color: #6018a7; */
     }
     .bo_title {
         max-width: 38ch;
@@ -64,8 +64,8 @@
     }
     .newest-event{
         margin-bottom: 1rem; 
-        padding-top: 5rem;
-        color: #fff;
+        padding-top: 15rem;
+        color: #111;
     }
     .card-body .list-group li:last-child{
         height: 4rem;
@@ -105,9 +105,12 @@
 <div class="home">
    
    
+    <div class="page_header_footbg" >
+    </div>
+         
     <div class="div-popular-evnets">
         <center>
-            <img class="header-img" src="/asset/img/SSTag.webp">
+            <!-- <img class="header-img" src="/asset/img/SSTag.webp"> -->
         </center>
         <!-- <div>
             <center>
@@ -119,46 +122,45 @@
             <div class="row newest-event">
                
                 <img class="col-2 event-logo" src="asset/img/event.png" alt="event">
-                <h1 class="h1-popular col-8">Newest Events</h1>     
+                <h1 class="h1-popular col-8">Upcoming Events</h1>     
             </div>
 
             <div class="row g-4">
                      
                 @if (count($eventList) > 0)             
                     @foreach ($eventList as $event)   
-                        @if($loop->iteration > 3)
-                            @break
+                        @php
+                            $isAlreadyRegister = 0;
+                        @endphp
+                        @foreach($event->users as $r) 
+                            @if($isAlreadyRegister == 0 && $r->UserID == Session()->get("loginId") )
+                                @php $isAlreadyRegister = 1; @endphp
+                                @break
+                            @endif
+                        @endforeach
+                        @if($isAlreadyRegister == 1)
+                            @include("event")
                         @endif
-                        @include("event")
                     @endforeach
                 @endif 
             </div> 
         </div> 
     </div>
-    <div class="page_header_footbg" >
-    </div>
-         
         
     <div>
     <h2 class="bo_title">"Unleash your passion, amplify your connections. Experience events redefined, where every moment becomes a memory worth cherishing. Join us in celebrating the power of community, innovation, and inspiration."</h2>
     
     </div>
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
         <div class="row mt-2 mb-3">
             <img class="col-2 event-logo" src="asset/img/event.png" alt="event">
-            <h1 class="col-8">All Events</h1>
+            <h1 class="col-8">All Upcoming Events</h1>
 
         </div>
-        <div class="row g-4"> 
-
-            @if (count($eventList) > 0)             
-                @foreach ($eventList as $event)   
-                    @include("event")
-                @endforeach
-            @endif
+        <div class="row g-4">  
             
         </div>
-    </div>
+    </div> -->
 </div>
 @endsection
 

@@ -20,6 +20,8 @@ Route::get('/', [HomeController::class, 'home']);
 
 // Event registration
 Route::get('/register-event', [HomeController::class, 'registerEvent'])->middleware('isLoggedIn')->name('register-event');
+Route::get('/upcoming-event', [HomeController::class, 'upcomingEvent'])->middleware('isLoggedIn');
+Route::get('/about-us', [HomeController::class, 'aboutUs'])->middleware('isLoggedIn');
 
 // Authentication routes
 Route::get('/login', [AuthenController::class, 'login'])->middleware('alreadyLoggedIn')->name('login');

@@ -36,13 +36,13 @@
     
     }
     .div-popular-evnets{
-        background-color: #6018a7;
+        /* background-color: #6018a7; */
     }
     .bo_title {
         max-width: 38ch;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 9rem;
+        margin-top: 7rem;
         margin-bottom: 6rem;
         text-align: justify;
     } 
@@ -108,57 +108,23 @@
     <div class="div-popular-evnets">
         <center>
             <img class="header-img" src="/asset/img/SSTag.webp">
-        </center>
-        <!-- <div>
-            <center>
-                <h1>Popular Events</h1>
-            </center>
-        </div> -->
-        <div class="container ">
-             <!-- mt-5 -->
-            <div class="row newest-event">
-               
-                <img class="col-2 event-logo" src="asset/img/event.png" alt="event">
-                <h1 class="h1-popular col-8">Newest Events</h1>     
-            </div>
+        </center> 
+        <div class="container "> 
 
             <div class="row g-4">
                      
-                @if (count($eventList) > 0)             
-                    @foreach ($eventList as $event)   
-                        @if($loop->iteration > 3)
-                            @break
-                        @endif
-                        @include("event")
-                    @endforeach
-                @endif 
+           
             </div> 
         </div> 
     </div>
-    <div class="page_header_footbg" >
+    <!-- <div class="page_header_footbg" > -->
     </div>
          
         
     <div>
     <h2 class="bo_title">"Unleash your passion, amplify your connections. Experience events redefined, where every moment becomes a memory worth cherishing. Join us in celebrating the power of community, innovation, and inspiration."</h2>
     
-    </div>
-    <div class="container mt-5">
-        <div class="row mt-2 mb-3">
-            <img class="col-2 event-logo" src="asset/img/event.png" alt="event">
-            <h1 class="col-8">All Events</h1>
-
-        </div>
-        <div class="row g-4"> 
-
-            @if (count($eventList) > 0)             
-                @foreach ($eventList as $event)   
-                    @include("event")
-                @endforeach
-            @endif
-            
-        </div>
-    </div>
+    </div> 
 </div>
 @endsection
 
